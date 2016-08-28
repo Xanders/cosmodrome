@@ -9,9 +9,10 @@ RUN apt-get install -y --no-install-recommends locales \
  && echo 'LANG="en_US.UTF-8"'>/etc/default/locale \
  && dpkg-reconfigure --frontend=noninteractive locales \
  && update-locale LANG=en_US.UTF-8
-ENV LANG en_US.UTF-8
+ENV LANG=en_US.UTF-8
 
 # nano
+ENV TERM=xterm
 RUN apt-get install -y --no-install-recommends nano
 
 # NodeJS
