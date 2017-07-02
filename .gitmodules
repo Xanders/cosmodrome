@@ -1,0 +1,3 @@
+[submodule "flex/frameworks/libs/player"]
+	path = flex/frameworks/libs/player
+	url = https://github.com/nexussays/playerglobal.git
